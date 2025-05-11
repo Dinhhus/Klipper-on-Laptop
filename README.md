@@ -32,20 +32,17 @@ sudo mv /etc/init/ssh.conf /etc/init/ssh.conf.back
 vào moonracker.conf của printer tương ứng thêm 127.0.0.1 và mục trust_clients:
 
 [server]
+
 host: 0.0.0.0
+
 port: 7125
+
 klippy_uds_address: /home/dinh/printer_printer11_data/comms/klippy.sock
 
 [authorization]
-trusted_clients:
-    127.0.0.1
-    192.168.0.0/16
-cors_domains:
-    *.lan
-    *.local
-    *://localhost
-    *://localhost:*
-    *://my.mainsail.xyz
-    *://app.fluidd.xyz
-    
 
+trusted_clients:
+
+    127.0.0.1
+    
+    192.168.0.0/16
